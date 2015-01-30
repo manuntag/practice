@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainTableViewController.h
 //  practice
 //
 //  Created by David Manuntag on 2015-01-30.
@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Person.h"
 
-@interface ViewController : UIViewController
-
-@property (nonatomic, strong) Person * person;
+@interface MainTableViewController : UITableViewController
 
 @end
-

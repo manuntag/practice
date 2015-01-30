@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *ageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *dobLabel;
 
 @end
 
@@ -16,12 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+        self.nameLabel.text = self.person.name;
+        self.ageLabel.text = [NSString stringWithFormat:@"Age:%d",self.person.age];
+        self.dobLabel.text = [NSString stringWithFormat:@"Date of Birth:%@",self.person.dateOfBirth];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
